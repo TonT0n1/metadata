@@ -3,7 +3,7 @@
 $pathToJson = 'C:\temp\json-2' <# Enter path to existing JSON files to update/modify #>
 $pathToList = 'C:\temp\duties.txt' <# Enter path to text file that contains list of values listed on individual lines #>
 $outputPath = 'c:\temp\new-JSON' <# Enter desired output path - NO TRAILING \ at the end #>
-$traitType = 'Duty'<# Enter trait type name here #>
+$traitType = 'Duty' <# Enter trait type name here #>
 
 if (!(Test-Path -Path $outputPath)) {
 
