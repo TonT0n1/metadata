@@ -1,9 +1,9 @@
 ﻿########################## Define your values here ###########################
 
 $pathToJson = 'C:\temp\json-2' <# Enter path to existing JSON files to update/modify #>
-$pathToList = 'C:\temp\duties.txt' <# Enter path to text file that contains list of values listed on individual lines #>
+$pathToList = 'C:\temp\names.txt' <# Enter path to text file that contains list of values listed on individual lines #>
 $outputPath = 'c:\temp\new-JSON' <# Enter desired output path - NO TRAILING \ at the end #>
-$traitType = 'Duty' <# Enter trait type name here #>
+$traitType = 'Name' <# Enter trait type name here #>
 
 if (!(Test-Path -Path $outputPath)) {
 
@@ -37,3 +37,5 @@ $json.attributes += New-Object -TypeName psobject -Property @{value="$assigned";
 $json | ConvertTo-Json | out-file $outputPath\$fileNm
 
 }
+
+ii $outputPath # Open output Folder
