@@ -12,12 +12,7 @@ This script allows you to add values, randomly selected from a text list to each
 
 For example, say you had a list of 100 names you wanted to randomly assign to your NFT collection items.
 
-i. In a .txt file add the names you want line by line .i.e.
-
-Andrew
-Antony
-Sarah
-Sophie
+i. In a .txt file add the names you want on individual lines.
 
 ii. Then open the script in either Powershell ISE or VS Studio Code.
 

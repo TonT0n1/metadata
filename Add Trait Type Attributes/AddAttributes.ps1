@@ -16,6 +16,7 @@ New-Item -Path $outputPath -ItemType Directory
 ###################### Get Item list and JSON Files ##########################
 
 $values = Get-Content $pathToList
+$values = $values | ? {$_ -ne ""}
 $files = Get-ChildItem -Path $pathToJson
 
 ##############################################################################
